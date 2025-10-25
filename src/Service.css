@@ -47,7 +47,6 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     height:auto;
     padding: 4em 1em;
