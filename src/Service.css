@@ -41,7 +41,7 @@
 .card-nth{
     display: flex;
     align-items: center;
-    justify-content: center;flex-wrap: wrap;
+    justify-content: center;
 }
 .s-card{
     display: flex;
