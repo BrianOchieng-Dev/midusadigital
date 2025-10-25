@@ -1,0 +1,93 @@
+.pricing {
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 5rem;color: var(--bg);
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.price-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  border: 1px solid var(--bg);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 40px rgba(0, 120, 255, 0.2);
+}
+
+.price-card h3 {
+  font-size: 2rem;color: var(--bg);
+  margin-bottom: 15px;
+}
+
+.price-card p {
+    width: inherit;
+  margin-bottom: 20px;
+}
+
+.price-card h2 {
+  margin: 10px 0;
+  color: var(--bg);
+}
+
+.price-card button {
+  background: var(--bg);
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.price-card button:hover {
+  background: #0080ff;
+}
+/* 📱 Responsive Tweaks */
+@media (max-width: 768px) {
+  .pricing {
+    padding: 60px 15px;
+  }
+
+  .price-card {
+    padding: 30px 20px;
+  }
+
+  .price-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .price-card h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-card {
+    border-radius: 16px;
+    padding: 25px;
+  }
+
+  .price-card button {
+    width: 100%;
+    padding: 10px;
+  }
+}

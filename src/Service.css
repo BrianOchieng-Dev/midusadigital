@@ -1,0 +1,113 @@
+
+#service{
+  
+  background-image: url('./assets/bg4.png');
+    background-position: center;
+    background-size: cover;
+
+    
+}
+#service h1{
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+}
+.s-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;flex-wrap: wrap;
+}
+.s-item{
+    display: flex;
+    flex: 1 1 400px;
+    align-items: center;
+    flex-direction: column;
+}
+.s-item p{
+    width: inherit;
+}
+.s-logo{
+    width: 100%;
+}
+
+/*cards*/
+.card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0px;
+}
+.card-nth{
+    display: flex;
+    align-items: center;
+    justify-content: center;flex-wrap: wrap;
+}
+.s-card{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height:auto;
+    padding: 4em 1em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(50px);
+    /*background: #000;*/
+   -webkit-backdrop-filter: blur(12px);
+}
+.s-card h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    border: 1px solid var(--bg);
+    width: 100px;height: 100px;
+    display: flex;align-items: center;
+    margin: 2px auto;justify-content: center;
+    border-radius: 10px;
+    background-color: #fff;
+    color: var(--bg);
+}
+.s-card p{
+    color: #fff;
+}
+.s-card p{
+    width: 80%;
+}
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 1024px) {
+  .s-card {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #service {
+    padding: 60px 15px;
+  }
+
+  .s-card h3 {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+
+  .s-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-nth {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .s-card {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
